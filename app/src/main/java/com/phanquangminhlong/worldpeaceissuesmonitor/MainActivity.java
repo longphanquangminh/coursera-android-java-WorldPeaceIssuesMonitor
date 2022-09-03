@@ -137,33 +137,33 @@ public class MainActivity extends AppCompatActivity {
         // let's read the issues from Google Firebase and (re)build the issues list!!
 
         // Task 4: Hardcode one entry for now (delete this block when done)
-        String severity = "major";
-        String resolved = "no";
-        String description = "Complete Task 4!";
-
-        // make a new Issue object and add it to the ArrayList
-        issuesList.add(new Issue(severity, resolved, description));
+//        String severity = "major";
+//        String resolved = "no";
+//        String description = "Complete Task 4!";
+//
+//        // make a new Issue object and add it to the ArrayList
+//        issuesList.add(new Issue(severity, resolved, description));
 
         // Task 4: uncomment this block:
-//        DatabaseReference dbRef // Task 4: get a reference from path /issues
-//
-//        dbRef.addValueEventListener(new ValueEventListener() {
-//
-//            @Override
-//            public void onDataChange(@NonNull DataSnapshot snapshot) {
-//
-//                // this event is fired every time anything under /issues changes
-//                // so we reconstruct the ArrayList and tell the adapter to update the screen
-//                DatabaseHelper.buildIssuesList(snapshot, issuesList);
-//                issueListAdaptor.notifyDataSetChanged();
-//            }
-//
-//            @Override
-//            public void onCancelled(@NonNull DatabaseError error) {
-//                alertFirebaseFailure(error);
-//                error.toException();
-//            }
-//        });
+        DatabaseReference dbRef = FirebaseDatabase.getInstance().getReference("/issues");
+
+        dbRef.addValueEventListener(new ValueEventListener() {
+
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+
+                // this event is fired every time anything under /issues changes
+                // so we reconstruct the ArrayList and tell the adapter to update the screen
+                DatabaseHelper.buildIssuesList(snapshot, issuesList);
+                issueListAdaptor.notifyDataSetChanged();
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+                alertFirebaseFailure(error);
+                error.toException();
+            }
+        });
 
         FloatingActionButton addButton = (FloatingActionButton)findViewById(R.id.addButton);
 
