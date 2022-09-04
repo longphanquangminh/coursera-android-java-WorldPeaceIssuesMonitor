@@ -1,13 +1,3 @@
-//
-// MainActivity.java
-//
-// This is the code for the main screen
-//
-// This file is part of the course "Build a Firebase Android Application"
-//
-// Written by Harrison Kong @ coursera.org
-//
-
 package com.phanquangminhlong.worldpeaceissuesmonitor;
 
 import androidx.annotation.NonNull;

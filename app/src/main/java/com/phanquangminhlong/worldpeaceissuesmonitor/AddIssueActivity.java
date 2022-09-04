@@ -1,14 +1,4 @@
-//
-// AddIssueActivity.java
-//
-// This is the code for the add new issue dialog box
-//
-// This file is part of the course "Build a Firebase Android Application"
-//
-// Written by Harrison Kong @ coursera.org
-//
-
-package com.skyroute66.worldpeaceissuesmonitor;
+package com.phanquangminhlong.worldpeaceissuesmonitor;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;

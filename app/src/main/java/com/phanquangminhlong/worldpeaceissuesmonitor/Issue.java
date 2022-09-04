@@ -1,13 +1,3 @@
-//
-// Issue.java
-//
-// This is the object representation of the objects in our database: an Issue
-//
-// This file is part of the course "Build a Firebase Android Application"
-//
-// Written by Harrison Kong @ coursera.org
-//
-
 package com.phanquangminhlong.worldpeaceissuesmonitor;
 
 import java.util.Arrays;

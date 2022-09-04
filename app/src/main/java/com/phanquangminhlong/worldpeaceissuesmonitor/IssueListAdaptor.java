@@ -1,13 +1,3 @@
-//
-// IssueListAdapter.java
-//
-// This object render the data in our issues ArrayList to the screen
-//
-// This file is part of the course "Build a Firebase Android Application"
-//
-// Written by Harrison Kong @ coursera.org
-//
-
 package com.phanquangminhlong.worldpeaceissuesmonitor;
 
 import android.content.Context;
