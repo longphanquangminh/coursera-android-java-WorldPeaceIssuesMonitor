@@ -8,7 +8,7 @@
 // Written by Harrison Kong @ coursera.org
 //
 
-package com.phanquangminhlong.worldpeaceissuesmonitor;
+package com.skyroute66.worldpeaceissuesmonitor;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
